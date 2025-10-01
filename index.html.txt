@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda Oficial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <div class="logo">TO</div>
+      <div>
+        <h1>Tienda Oficial</h1>
+        <p class="lead">Lista de precios actualizada — personaliza colores, textos y nombre de tu proyecto.</p>
+      </div>
+    </header>
+
+    <!-- 🟢 Megas -->
+    <section>
+      <h2>🟢 Megas</h2>
+      <div class="grid">
+        <div class="box">Mega-Abomasnow <div class="price">80k</div></div>
+        <div class="box">Mega-Beedrill <div class="price">90k</div></div>
+        <div class="box">Mega-Banette <div class="price">100k</div></div>
+        <div class="box">Mega-Glalie <div class="price">100k</div></div>
+        <div class="box">Mega-Pidgeot <div class="price">120k</div></div>
+        <div class="box">Mega-Audino <div class="price">120k</div></div>
+        <div class="box">Mega-Camerupt <div class="price">150k</div></div>
+        <div class="box">Mega-Houndoom <div class="price">150k</div></div>
+        <div class="box">Mega-Ampharos <div class="price">160k</div></div>
+        <div class="box">Mega-Steelix <div class="price">180k</div></div>
+        <div class="box">Mega-Venusaur <div class="price">220k</div></div>
+        <div class="box">Mega-Blastoise <div class="price">220k</div></div>
+        <div class="box">Mega-Slowbro <div class="price">250k</div></div>
+        <div class="box">Mega-Aggron <div class="price">250k</div></div>
+        <div class="box">Mega-Manectric <div class="price">260k</div></div>
+        <div class="box">Mega-Absol <div class="price">260k</div></div>
+        <div class="box">Mega-Sceptile <div class="price">270k</div></div>
+        <div class="box">Mega-Swampert <div class="price">300k</div></div>
+        <div class="box">Mega-Heracross <div class="price">320k</div></div>
+        <div class="box">Mega-Pinsir <div class="price">350k</div></div>
+        <div class="box">Mega-Sharpedo <div class="price">360k</div></div>
+        <div class="box">Mega-Altaria <div class="price">380k</div></div>
+        <div class="box">Mega-Gardevoir <div class="price">400k</div></div>
+        <div class="box">Mega-Gallade <div class="price">420k</div></div>
+        <div class="box">Mega-Garchomp <div class="price">420k</div></div>
+        <div class="box">Mega-Charizard X <div class="price">500k</div></div>
+        <div class="box">Mega-Charizard Y <div class="price">520k</div></div>
+        <div class="box">Mega-Tyranitar <div class="price">520k</div></div>
+        <div class="box">Mega-Scizor <div class="price">540k</div></div>
+        <div class="box">Mega-Latias <div class="price">560k</div></div>
+        <div class="box">Mega-Latios <div class="price">560k</div></div>
+        <div class="box">Mega-Medicham <div class="price">580k</div></div>
+        <div class="box">Mega-Lopunny <div class="price">600k</div></div>
+        <div class="box">Mega-Metagross <div class="price">620k</div></div>
+        <div class="box">Mega-Diancie <div class="price">640k</div></div>
+        <div class="box">Mega-Mawile <div class="price">650k</div></div>
+        <div class="box">Mega-Sableye <div class="price">660k</div></div>
+        <div class="box">Mega-Gyarados <div class="price">680k</div></div>
+        <div class="box">Mega-Salamence <div class="price">700k</div></div>
+        <div class="box">Mega-Lucario <div class="price">720k</div></div>
+        <div class="box">Mega-Kangaskhan <div class="price">740k</div></div>
+        <div class="box">Mega-Gengar <div class="price">760k</div></div>
+        <div class="box">Mega-Alakazam <div class="price">780k</div></div>
+        <div class="box">Mega-Blaziken <div class="price">790k</div></div>
+        <div class="box">Mega-Mewtwo X <div class="price">800k</div></div>
+        <div class="box">Mega-Mewtwo Y <div class="price">800k</div></div>
+      </div>
+    </section>
+
+    <!-- 🟣 Arceus Plates -->
+    <section>
+      <h2>🟣 Arceus Plates</h2>
+      <p>Cada Plate cuesta <strong>200k</strong></p>
+      <p>Flame, Splash, Zap, Meadow, Icicle, Fist, Toxic, Earth, Sky, Mind, Insect, Stone, Spooky, Draco, Dread, Iron, Pixie</p>
+    </section>
+
+    <!-- 🔵 Poké Balls -->
+    <section>
+      <h2>🔵 Poké Balls útiles</h2>
+      <ul>
+        <li>Poké Ball (x64) — 10k</li>
+        <li>Great Ball (x64) — 20k</li>
+        <li>Ultra Ball (x64) — 50k</li>
+        <li>Fast Ball (x64) — 100k</li>
+        <li>Timer Ball (x64) — 100k</li>
+        <li>Dusk Ball (x64) — 120k</li>
+        <li>Repeat Ball (x64) — 120k</li>
+        <li>Heavy Ball (x64) — 150k</li>
+        <li>Dream Ball (x64) — 180k</li>
+        <li>Beast Ball (x64) — 200k</li>
+        <li>Master Ball — 500k</li>
+      </ul>
+    </section>
+
+    <!-- 🟣 Crías -->
+    <section>
+      <h2>🟣 Precio de crías</h2>
+
+      <h3>🟧 Pokémon normales</h3>
+      <p>0x31: 10k – 30k | 1x31: 30k – 50k | 2x31: 50k – 70k | 3x31: 70k – 90k | 4x31: 90k – 120k | 5x31: 120k – 150k | IVs perfectos: 150k – 200k</p>
+
+      <h3>🟥 Pseudo-legendarios</h3>
+      <p>0x31: 30k – 60k | 1x31: 60k – 90k | 2x31: 90k – 120k | 3x31: 120k – 150k | 4x31: 150k – 180k | 5x31: 180k – 220k | IVs perfectos: 250k – 350k</p>
+
+      <h3>🟪 Iniciales competitivos</h3>
+      <p>0x31: 20k – 40k | 1x31: 50k – 80k | 2x31: 80k – 110k | 3x31: 110k – 140k | 4x31: 140k – 170k | 5x31: 170k – 200k | IVs perfectos: 230k – 300k</p>
+      <p>Extras: Naturaleza favorable: +20k | Habilidad Oculta: +25k</p>
+      <p><strong>Iniciales destacados:</strong> Incineroar, Meowscarada, Rillaboom, Skeledirge, Blastoise, Swampert, Charizard, Primarina, Serperior, Cinderace, Blaziken</p>
+    </section>
+
+    <!-- ⚪ Legendarios -->
+    <section>
+      <h2>⚪ Legendarios y Míticos</h2>
+      <h3>⬛ Menores</h3>
+      <p>0x31–3x31: 350k – 400k | 4x31–6x31: 450k – 500k</p>
+      <h3>🟫 Mayores</h3>
+      <p>0x31–3x31: 400k – 500k | 4x31–6x31: 550k – 625k</p>
+      <p><strong>Extras:</strong> Shiny +100k | Shiny legendario/ mítico menor +150k | Shiny legendario mayor +200k</p>
+      <p><strong>Nota:</strong> Si el legendario es muy raro (ejemplo: Rayquaza con pocos ejemplares), el dueño puede fijar el precio libremente. Se recomienda subasta desde 1M.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Tienda Oficial — Actualizado el 30/09/2025</p>
+    </footer>
+  </main>
+</body>
+</html>
