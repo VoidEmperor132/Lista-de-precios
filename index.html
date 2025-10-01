@@ -10,61 +10,83 @@
 <body>
   <header>
     <h1>Lycorea Online</h1>
-    <nav>
-      <ul>
-        <li><a href="#megas">🟢 Megas</a></li>
-        <li><a href="#arceus">🟣 Arceus Plates</a></li>
-        <li><a href="#pokeballs">🔵 Poké Balls</a></li>
-        <li><a href="#crias">🟣 Crías</a></li>
-        <li><a href="#legendarios">⚪ Legendarios</a></li>
-      </ul>
-    </nav>
+    <p class="lead">Tienda oficial — catálogo de Pokémon, Megas, Crías y Poké Balls</p>
   </header>
 
+  <nav class="tabs">
+    <button class="tab-button active" data-tab="megas">🟢 Megas</button>
+    <button class="tab-button" data-tab="arceus">🟣 Arceus Plates</button>
+    <button class="tab-button" data-tab="pokeballs">🔵 Poké Balls</button>
+    <button class="tab-button" data-tab="crias">🟣 Crías</button>
+    <button class="tab-button" data-tab="legendarios">⚪ Legendarios</button>
+  </nav>
+
   <main>
-    <section id="megas">
+    <!-- MEGAS -->
+    <section class="tab-content active" id="megas">
       <h2>🟢 Megas</h2>
       <div class="grid">
-        <!-- Lista de Megas -->
-        <div class="item">
-          <p>Mega-Abomasnow</p>
-          <span>80k</span>
-        </div>
-        <!-- Agregar más items aquí -->
+        <div class="item">Mega-Abomasnow <span>80k</span></div>
+        <div class="item">Mega-Beedrill <span>90k</span></div>
+        <div class="item">Mega-Banette <span>100k</span></div>
+        <div class="item">Mega-Glalie <span>100k</span></div>
+        <div class="item">Mega-Pidgeot <span>120k</span></div>
+        <div class="item">Mega-Audino <span>120k</span></div>
+        <!-- Agrega todos los demás Megas de la lista -->
       </div>
     </section>
 
-    <section id="arceus">
+    <!-- ARCEUS PLATES -->
+    <section class="tab-content" id="arceus">
       <h2>🟣 Arceus Plates</h2>
       <p>Cada Plate cuesta <strong>200k</strong></p>
       <p>Flame, Splash, Zap, Meadow, Icicle, Fist, Toxic, Earth, Sky, Mind, Insect, Stone, Spooky, Draco, Dread, Iron, Pixie</p>
     </section>
 
-    <section id="pokeballs">
+    <!-- POKÉ BALLS -->
+    <section class="tab-content" id="pokeballs">
       <h2>🔵 Poké Balls útiles</h2>
-      <ul>
-        <li>Poké Ball (x64) — 10k</li>
-        <li>Great Ball (x64) — 20k</li>
-        <!-- Agregar más items aquí -->
-      </ul>
+      <div class="grid">
+        <div class="item">Poké Ball (x64) <span>10k</span></div>
+        <div class="item">Great Ball (x64) <span>20k</span></div>
+        <div class="item">Ultra Ball (x64) <span>50k</span></div>
+        <div class="item">Fast Ball (x64) <span>100k</span></div>
+        <div class="item">Timer Ball (x64) <span>100k</span></div>
+        <div class="item">Dusk Ball (x64) <span>120k</span></div>
+        <div class="item">Repeat Ball (x64) <span>120k</span></div>
+        <div class="item">Heavy Ball (x64) <span>150k</span></div>
+        <div class="item">Dream Ball (x64) <span>180k</span></div>
+        <div class="item">Beast Ball (x64) <span>200k</span></div>
+        <div class="item">Master Ball <span>500k</span></div>
+      </div>
     </section>
 
-    <section id="crias">
+    <!-- CRÍAS -->
+    <section class="tab-content" id="crias">
       <h2>🟣 Precio de crías</h2>
-      <p>0x31: 10k – 30k | 1x31: 30k – 50k | 2x31: 50k – 70k | 3x31: 70k – 90k | 4x31: 90k – 120k | 5x31: 120k – 150k | IVs perfectos: 150k – 200k</p>
-      <!-- Agregar más información aquí -->
+      <h3>🟧 Pokémon normales</h3>
+      <p>0x31: 10k–30k | 1x31: 30k–50k | 2x31: 50k–70k | 3x31: 70k–90k | 4x31: 90k–120k | 5x31: 120k–150k | IVs perfectos: 150k–200k</p>
+      <h3>🟥 Pseudo-legendarios</h3>
+      <p>0x31: 30k–60k | 1x31: 60k–90k | 2x31: 90k–120k | 3x31: 120k–150k | 4x31: 150k–180k | 5x31: 180k–220k | IVs perfectos: 250k–350k</p>
+      <h3>🟪 Iniciales competitivos</h3>
+      <p>0x31: 20k–40k | 1x31: 50k–80k | 2x31: 80k–110k | 3x31: 110k–140k | 4x31: 140k–170k | 5x31: 170k–200k | IVs perfectos: 230k–300k</p>
+      <p>Extras: Naturaleza favorable: +20k | Habilidad Oculta: +25k</p>
     </section>
 
-    <section id="legendarios">
+    <!-- LEGENDARIOS -->
+    <section class="tab-content" id="legendarios">
       <h2>⚪ Legendarios y Míticos</h2>
-      <p>⬛ Menores: 350k – 400k | 4x31–6x31: 450k – 500k</p>
-      <p>🟫 Mayores: 400k – 500k | 4x31–6x31: 550k – 625k</p>
-      <p><strong>Extras:</strong> Shiny +100k | Shiny legendario/ mítico menor +150k | Shiny legendario mayor +200k</p>
+      <p>⬛ Menores: 0x31–3x31: 350k–400k | 4x31–6x31: 450k–500k</p>
+      <p>🟫 Mayores: 0x31–3x31: 400k–500k | 4x31–6x31: 550k–625k</p>
+      <p>Extras: Shiny +100k | Shiny legendario/mítico menor +150k | Shiny legendario mayor +200k</p>
+      <p>Nota: Si el legendario es muy raro, el dueño puede fijar el precio libremente. Se recomienda subasta desde 1M.</p>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Lycorea Online — Actualizado el 30/09/2025</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
