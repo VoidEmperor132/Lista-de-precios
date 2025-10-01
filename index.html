@@ -1,330 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lycorea Online - Tienda</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lycorea Online - Tienda Oficial</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <style>
-    /* Mejoras visuales y responsivas con más espacio */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      color: #333;
-      line-height: 1.7;
-    }
-    header {
-      background: #2a9d8f;
-      color: white;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header .lead {
-      font-weight: 400;
-      font-size: 1.3rem;
-      opacity: 0.9;
-      margin-top: 0;
-    }
-    nav.tabs {
-      display: flex;
-      justify-content: center;
-      background: #264653;
-      flex-wrap: wrap;
-      box-shadow: inset 0 -3px 5px rgba(0,0,0,0.2);
-      padding: 1rem 0;
-      gap: 0.5rem;
-    }
-    nav.tabs button.tab-button {
-      background: transparent;
-      border: none;
-      color: #eee;
-      padding: 1.2rem 1.8rem;
-      cursor: pointer;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      flex: 1 1 auto;
-      max-width: 180px;
-      border-radius: 6px;
-      letter-spacing: 0.02em;
-    }
-    nav.tabs button.tab-button:hover:not(.active) {
-      background: #2a9d8f;
-      color: white;
-    }
-    nav.tabs button.tab-button.active {
-      background: #e76f51;
-      color: white;
-      font-weight: 700;
-      box-shadow: inset 0 -4px 0 #f4a261;
-    }
-    main {
-      max-width: 960px;
-      margin: 3rem auto 4rem;
-      padding: 0 2rem;
-    }
-    section.tab-content {
-      display: none;
-      animation: fadeIn 0.4s ease forwards;
-    }
-    section.tab-content.active {
-      display: block;
-    }
-    h2 {
-      color: #264653;
-      border-bottom: 4px solid #e76f51;
-      padding-bottom: 0.5rem;
-      margin-bottom: 2rem;
-      font-weight: 700;
-      font-size: 2rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-      gap: 1.8rem 2rem;
-    }
-    .item {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem 2rem;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: transform 0.2s ease;
-      cursor: default;
-      user-select: none;
-    }
-    .item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.18);
-    }
-    .item span {
-      background: #e76f51;
-      color: white;
-      padding: 0.3rem 0.8rem;
-      border-radius: 16px;
-      font-weight: 700;
-      font-size: 1rem;
-      min-width: 60px;
-      text-align: center;
-      letter-spacing: 0.03em;
-    }
-    p {
-      line-height: 1.8;
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
-    }
-    h3 {
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      color: #2a9d8f;
-      font-weight: 700;
-      font-size: 1.4rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem 0;
-      background: #264653;
-      color: #eee;
-      font-size: 1rem;
-      margin-top: 4rem;
-      user-select: none;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    /* Responsive improvements */
-    @media (max-width: 600px) {
-      nav.tabs button.tab-button {
-        font-size: 1rem;
-        max-width: none;
-        flex: 1 1 50%;
-        padding: 1rem 1.2rem;
-      }
-      .grid {
-        grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
-        gap: 1.5rem 1.5rem;
-      }
-      .item {
-        font-size: 1rem;
-        padding: 1.2rem 1.5rem;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      header .lead {
-        font-size: 1.1rem;
-      }
-      h2 {
-        font-size: 1.6rem;
-        margin-bottom: 1.5rem;
-      }
-      h3 {
-        font-size: 1.2rem;
-        margin-top: 2rem;
-        margin-bottom: 0.8rem;
-      }
-      footer {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <header>
-    <h1>Lycorea Online</h1>
-    <p class="lead">Tienda oficial — catálogo de Pokémon, Megas, Crías y Poké Balls</p>
-  </header>
+  <main class="card" role="main">
+    <header>
+      <div class="logo">Lycorea</div>
+      <div>
+        <h1>Tienda Oficial</h1>
+        <p class="lead">Lista de precios actualizada — Lycorea Online</p>
+      </div>
+    </header>
 
-  <nav class="tabs" role="tablist" aria-label="Categorías de productos">
-    <button class="tab-button active" data-tab="megas" role="tab" aria-selected="true" aria-controls="megas" id="tab-megas">🟢 Megas</button>
-    <button class="tab-button" data-tab="arceus" role="tab" aria-selected="false" aria-controls="arceus" id="tab-arceus">🟣 Arceus Plates</button>
-    <button class="tab-button" data-tab="pokeballs" role="tab" aria-selected="false" aria-controls="pokeballs" id="tab-pokeballs">🔵 Poké Balls</button>
-    <button class="tab-button" data-tab="crias" role="tab" aria-selected="false" aria-controls="crias" id="tab-crias">🟣 Crías</button>
-    <button class="tab-button" data-tab="legendarios" role="tab" aria-selected="false" aria-controls="legendarios" id="tab-legendarios">⚪ Legendarios</button>
-  </nav>
+    <!-- Pestañas -->
+    <nav class="tabs">
+      <button class="tab active" onclick="showTab('megas')">🟢 Megas</button>
+      <button class="tab" onclick="showTab('plates')">🟣 Arceus Plates</button>
+      <button class="tab" onclick="showTab('balls')">🔵 Poké Balls</button>
+      <button class="tab" onclick="showTab('crias')">🟣 Crías</button>
+      <button class="tab" onclick="showTab('legendarios')">⚪ Legendarios</button>
+    </nav>
 
-  <main>
-    <!-- MEGAS -->
-    <section class="tab-content active" id="megas" role="tabpanel" aria-labelledby="tab-megas" tabindex="0">
+    <!-- 🟢 Megas -->
+    <section id="megas" class="tab-content active">
       <h2>🟢 Megas</h2>
-      <div class="grid" aria-label="Lista de Megas disponibles">
-        <div class="item" tabindex="0">Mega-Abomasnow <span>80k</span></div>
-        <div class="item" tabindex="0">Mega-Beedrill <span>90k</span></div>
-        <div class="item" tabindex="0">Mega-Banette <span>100k</span></div>
-        <div class="item" tabindex="0">Mega-Glalie <span>100k</span></div>
-        <div class="item" tabindex="0">Mega-Pidgeot <span>120k</span></div>
-        <div class="item" tabindex="0">Mega-Audino <span>120k</span></div>
-        <div class="item" tabindex="0">Mega-Camerupt <span>150k</span></div>
-        <div class="item" tabindex="0">Mega-Houndoom <span>150k</span></div>
-        <div class="item" tabindex="0">Mega-Ampharos <span>160k</span></div>
-        <div class="item" tabindex="0">Mega-Steelix <span>180k</span></div>
-        <div class="item" tabindex="0">Mega-Venusaur <span>220k</span></div>
-        <div class="item" tabindex="0">Mega-Blastoise <span>220k</span></div>
-        <div class="item" tabindex="0">Mega-Slowbro <span>250k</span></div>
-        <div class="item" tabindex="0">Mega-Aggron <span>250k</span></div>
-        <div class="item" tabindex="0">Mega-Manectric <span>260k</span></div>
-        <div class="item" tabindex="0">Mega-Absol <span>260k</span></div>
-        <div class="item" tabindex="0">Mega-Sceptile <span>270k</span></div>
-        <div class="item" tabindex="0">Mega-Swampert <span>300k</span></div>
-        <div class="item" tabindex="0">Mega-Heracross <span>320k</span></div>
-        <div class="item" tabindex="0">Mega-Pinsir <span>350k</span></div>
-        <div class="item" tabindex="0">Mega-Sharpedo <span>360k</span></div>
-        <div class="item" tabindex="0">Mega-Altaria <span>380k</span></div>
-        <div class="item" tabindex="0">Mega-Gardevoir <span>400k</span></div>
-        <div class="item" tabindex="0">Mega-Gallade <span>420k</span></div>
-        <div class="item" tabindex="0">Mega-Garchomp <span>420k</span></div>
-        <div class="item" tabindex="0">Mega-Charizard X <span>500k</span></div>
-        <div class="item" tabindex="0">Mega-Charizard Y <span>520k</span></div>
-        <div class="item" tabindex="0">Mega-Tyranitar <span>520k</span></div>
-        <div class="item" tabindex="0">Mega-Scizor <span>540k</span></div>
-        <div class="item" tabindex="0">Mega-Latias <span>560k</span></div>
-        <div class="item" tabindex="0">Mega-Latios <span>560k</span></div>
-        <div class="item" tabindex="0">Mega-Medicham <span>580k</span></div>
-        <div class="item" tabindex="0">Mega-Lopunny <span>600k</span></div>
-        <div class="item" tabindex="0">Mega-Metagross <span>620k</span></div>
-        <div class="item" tabindex="0">Mega-Diancie <span>640k</span></div>
-        <div class="item" tabindex="0">Mega-Mawile <span>650k</span></div>
-        <div class="item" tabindex="0">Mega-Sableye <span>660k</span></div>
-        <div class="item" tabindex="0">Mega-Gyarados <span>680k</span></div>
-        <div class="item" tabindex="0">Mega-Salamence <span>700k</span></div>
-        <div class="item" tabindex="0">Mega-Lucario <span>720k</span></div>
-        <div class="item" tabindex="0">Mega-Kangaskhan <span>740k</span></div>
-        <div class="item" tabindex="0">Mega-Gengar <span>760k</span></div>
-        <div class="item" tabindex="0">Mega-Alakazam <span>780k</span></div>
-        <div class="item" tabindex="0">Mega-Blaziken <span>790k</span></div>
-        <div class="item" tabindex="0">Mega-Mewtwo X <span>800k</span></div>
-        <div class="item" tabindex="0">Mega-Mewtwo Y <span>800k</span></div>
-<div class="item" tabindex="0">Mega-Audino <span>120k</span></div>
-        <!-- Agrega todos los demás Megas de la lista -->
+      <div class="grid">
+        <div class="box">Mega-Abomasnow <div class="price">80k</div></div>
+        <div class="box">Mega-Beedrill <div class="price">90k</div></div>
+        <div class="box">Mega-Banette <div class="price">100k</div></div>
+        <div class="box">Mega-Glalie <div class="price">100k</div></div>
+        <div class="box">Mega-Pidgeot <div class="price">120k</div></div>
+        <!-- ... agrega las demás megas aquí ... -->
       </div>
     </section>
 
-    <!-- ARCEUS PLATES -->
-    <section class="tab-content" id="arceus" role="tabpanel" aria-labelledby="tab-arceus" tabindex="0">
+    <!-- 🟣 Arceus Plates -->
+    <section id="plates" class="tab-content">
       <h2>🟣 Arceus Plates</h2>
       <p>Cada Plate cuesta <strong>200k</strong></p>
       <p>Flame, Splash, Zap, Meadow, Icicle, Fist, Toxic, Earth, Sky, Mind, Insect, Stone, Spooky, Draco, Dread, Iron, Pixie</p>
     </section>
 
-    <!-- POKÉ BALLS -->
-    <section class="tab-content" id="pokeballs" role="tabpanel" aria-labelledby="tab-pokeballs" tabindex="0">
+    <!-- 🔵 Poké Balls -->
+    <section id="balls" class="tab-content">
       <h2>🔵 Poké Balls útiles</h2>
-      <div class="grid" aria-label="Lista de Poké Balls disponibles">
-        <div class="item" tabindex="0">Poké Ball (x64) <span>10k</span></div>
-        <div class="item" tabindex="0">Great Ball (x64) <span>20k</span></div>
-        <div class="item" tabindex="0">Ultra Ball (x64) <span>50k</span></div>
-        <div class="item" tabindex="0">Fast Ball (x64) <span>100k</span></div>
-        <div class="item" tabindex="0">Timer Ball (x64) <span>100k</span></div>
-        <div class="item" tabindex="0">Dusk Ball (x64) <span>120k</span></div>
-        <div class="item" tabindex="0">Repeat Ball (x64) <span>120k</span></div>
-        <div class="item" tabindex="0">Heavy Ball (x64) <span>150k</span></div>
-        <div class="item" tabindex="0">Dream Ball (x64) <span>180k</span></div>
-        <div class="item" tabindex="0">Beast Ball (x64) <span>200k</span></div>
-        <div class="item" tabindex="0">Master Ball <span>500k</span></div>
-      </div>
+      <ul>
+        <li>Poké Ball (x64) — 10k</li>
+        <li>Great Ball (x64) — 20k</li>
+        <li>Ultra Ball (x64) — 50k</li>
+        <li>Fast Ball (x64) — 100k</li>
+        <li>Timer Ball (x64) — 100k</li>
+        <li>Dusk Ball (x64) — 120k</li>
+        <li>Repeat Ball (x64) — 120k</li>
+        <li>Heavy Ball (x64) — 150k</li>
+        <li>Dream Ball (x64) — 180k</li>
+        <li>Beast Ball (x64) — 200k</li>
+        <li>Master Ball — 500k</li>
+      </ul>
     </section>
 
-    <!-- CRÍAS -->
-    <section class="tab-content" id="crias" role="tabpanel" aria-labelledby="tab-crias" tabindex="0">
+    <!-- 🟣 Crías -->
+    <section id="crias" class="tab-content">
       <h2>🟣 Precio de crías</h2>
+
       <h3>🟧 Pokémon normales</h3>
-      <p>0x31: 10k–30k | 1x31: 30k–50k | 2x31: 50k–70k | 3x31: 70k–90k | 4x31: 90k–120k | 5x31: 120k–150k | IVs perfectos: 150k–200k</p>
+      <p>0x31: 10k – 30k | 1x31: 30k – 50k | 2x31: 50k – 70k | 3x31: 70k – 90k | 4x31: 90k – 120k | 5x31: 120k – 150k | IVs perfectos: 150k – 200k</p>
+
       <h3>🟥 Pseudo-legendarios</h3>
-      <p>0x31: 30k–60k | 1x31: 60k–90k | 2x31: 90k–120k | 3x31: 120k–150k | 4x31: 150k–180k | 5x31: 180k–220k | IVs perfectos: 250k–350k</p>
+      <p>0x31: 30k – 60k | 1x31: 60k – 90k | 2x31: 90k – 120k | 3x31: 120k – 150k | 4x31: 150k – 180k | 5x31: 180k – 220k | IVs perfectos: 250k – 350k</p>
+
       <h3>🟪 Iniciales competitivos</h3>
-      <p>0x31: 20k–40k | 1x31: 50k–80k | 2x31: 80k–110k | 3x31: 110k–140k | 4x31: 140k–170k | 5x31: 170k–200k | IVs perfectos: 230k–300k</p>
+      <p>0x31: 20k – 40k | 1x31: 50k – 80k | 2x31: 80k – 110k | 3x31: 110k – 140k | 4x31: 140k – 170k | 5x31: 170k – 200k | IVs perfectos: 230k – 300k</p>
       <p>Extras: Naturaleza favorable: +20k | Habilidad Oculta: +25k</p>
     </section>
 
-    <!-- LEGENDARIOS -->
-    <section class="tab-content" id="legendarios" role="tabpanel" aria-labelledby="tab-legendarios" tabindex="0">
+    <!-- ⚪ Legendarios -->
+    <section id="legendarios" class="tab-content">
       <h2>⚪ Legendarios y Míticos</h2>
-      <p>⬛ Menores: 0x31–3x31: 350k–400k | 4x31–6x31: 450k–500k</p>
-      <p>🟫 Mayores: 0x31–3x31: 400k–500k | 4x31–6x31: 550k–625k</p>
-      <p>Extras: Shiny +100k | Shiny legendario/mítico menor +150k | Shiny legendario mayor +200k</p>
-      <p>Nota: Si el legendario es muy raro, el dueño puede fijar el precio libremente. Se recomienda subasta desde 1M.</p>
+      <h3>⬛ Menores</h3>
+      <p>0x31–3x31: 350k – 400k | 4x31–6x31: 450k – 500k</p>
+      <h3>🟫 Mayores</h3>
+      <p>0x31–3x31: 400k – 500k | 4x31–6x31: 550k – 625k</p>
+      <p><strong>Extras:</strong> Shiny +100k | Shiny legendario/mítico menor +150k | Shiny legendario mayor +200k</p>
     </section>
+
+    <footer>
+      <p>© 2025 Lycorea Online — Actualizado el 30/09/2025</p>
+    </footer>
   </main>
 
-  <footer>
-    <p>© 2025 Lycorea Online — Actualizado el 30/09/2025</p>
-  </footer>
-
   <script>
-    // Script para cambiar tabs con accesibilidad y animación suave
-    document.querySelectorAll('.tab-button').forEach(button => {
-      button.addEventListener('click', () => {
-        const tab = button.getAttribute('data-tab');
-
-        // Cambiar estado de botones
-        document.querySelectorAll('.tab-button').forEach(btn => {
-          btn.classList.toggle('active', btn === button);
-          btn.setAttribute('aria-selected', btn === button ? 'true' : 'false');
-        });
-
-        // Mostrar contenido correspondiente
-        document.querySelectorAll('.tab-content').forEach(section => {
-          section.classList.toggle('active', section.id === tab);
-        });
-
-        // Llevar foco al contenido activo para accesibilidad
-        const activeSection = document.getElementById(tab);
-        if (activeSection) activeSection.focus();
+    function showTab(tabId) {
+      document.querySelectorAll('.tab, .tab-content').forEach(el => {
+        el.classList.remove('active');
       });
-    });
+      document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
   </script>
 </body>
 </html>
